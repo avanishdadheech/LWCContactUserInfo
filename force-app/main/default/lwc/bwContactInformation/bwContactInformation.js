@@ -1,4 +1,4 @@
-import { LightningElement, wire, api} from 'lwc';
+import { LightningElement, wire, api} from 'lwc'; 
 import getUserInfo from '@salesforce/apex/BW_UserInformation.getUserInfo';
 
 export default class BwContactInformation extends LightningElement {
