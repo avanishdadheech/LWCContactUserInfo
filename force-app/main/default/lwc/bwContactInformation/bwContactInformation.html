@@ -1,0 +1,35 @@
+<template>
+    <lightning-card title="User Details" icon-name="standard:user">
+        <div class="slds-m-around_medium slds-list_horizontal slds-wrap">
+            <template if:true={errflag}>
+                {message}
+            </template>
+            <template for:each={records} for:item='record'>
+                <table key={record.id}
+                    class="slds-table slds-table_bordered slds-table_fixed-layout  slds-box slds-box_x-small"
+                    border="2px solid" role="grid">
+                    <tr>
+                        <th style="background:#f3f2f2;">Id</th>
+                        <td>{record.UserId}</td>
+                    </tr>
+                    <tr>
+                        <th style="background:#f3f2f2;">Name</th>
+                        <td>{record.UserName}</td>
+                    </tr>
+                    <tr>
+                        <th style="background:#f3f2f2;">Profile</th>
+                        <td>{record.UserProfile}</td>
+                    </tr>
+                    <tr>
+                        <th style="background:#f3f2f2;">Role</th>
+                        <td>{record.UserRole}</td>
+                    </tr>
+                    <tr>
+                        <th style="background:#f3f2f2;">Email</th>
+                        <td>{record.UserEmail}</td>
+                    </tr>
+                </table>
+            </template>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>bwLabelEmailBlank</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>bwLabelEmailBlank</shortDescription>
+        <value>Unable to fetch User details, email is blank for this Contact.</value>
+    </labels>
+    <labels>
+        <fullName>bwLabelUserNotPresentWithEmail</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>bwLabelUserNotPresentWithEmail</shortDescription>
+        <value>Unable to fetch User details, no user present with email :</value>
+    </labels>
+</CustomLabels>
